@@ -1,4 +1,4 @@
-# Frontend Developer Clone - Gavea
+# Frontend Developer Clone - Palermo
     
 Desenvolver um curto fluxo de checkout. Algumas destas tarefas envolvem integração com uma API pública.
 
