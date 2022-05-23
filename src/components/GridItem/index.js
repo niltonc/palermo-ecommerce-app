@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, Image} from "react-native";
+import { FlatList, Image, SafeAreaView} from "react-native";
 
 import Products from 'src/services/products';
 
@@ -19,6 +19,8 @@ export default function GridItemComponent(){
 
   const renderItem = ({ item }) => {
       return (
+        <GridItem.ContainerWrapper>
+          
         <GridItem.Wrapper>
         <GridItem.ImageContainer>
         <Image source={ItemImage}/>
@@ -40,11 +42,13 @@ export default function GridItemComponent(){
         </GridItem.Price>
 
         </GridItem.Wrapper>
+        </GridItem.ContainerWrapper>
     );
   };
   
   const columns = 2; 
   return (
+  <SafeAreaView style={{flex: 1}}>
       <FlatList
         data={product}
         renderItem={renderItem}
@@ -53,5 +57,6 @@ export default function GridItemComponent(){
         numColumns= {columns}
         nestedScrollEnabled={true}
       />
+      </SafeAreaView>
   );
 };

@@ -1,11 +1,15 @@
 import styled from "styled-components/native";
 
+export const ContainerWrapper = styled.View`
+   flex: 1;
+   display: flex;
+`; 
 export const Wrapper = styled.View`
     position: relative;
     display: flex;
     width: 170px;
     height: 200px;
-    margin: 19px;
+    margin: 7px;
 `;
 export const Category = styled.Text`
     color: ${props => props.theme.colors.primary};
