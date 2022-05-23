@@ -21,9 +21,18 @@ export const Text = styled.Text`
     width: 333px;
     height: 14px;
 `;
-export const ContainerTitle = styled.View`
-    background-color: #1221;
-    
+export const TextBold = styled(Text)`
+    font-size: 14px;
+    height: 30px;
+    top: 20px;
+`;
+export const TextContainer = styled.View`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    top: 30px;
+
 `;
 export const Title = styled.Text`
     color: ${props => props.theme.colors.black};
